@@ -1,0 +1,179 @@
+{
+   "$id": "https://w3id.org/include_schema",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "NamedThing": {
+         "additionalProperties": false,
+         "description": "root class",
+         "properties": {
+            "id": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "title": "NamedThing",
+         "type": "object"
+      },
+      "Person": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "id": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "title": "Person",
+         "type": "object"
+      },
+      "Sample": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "id": {
+               "type": "string"
+            },
+            "parent_sample": {
+               "description": "Sample from which another sample was derived",
+               "type": "string"
+            },
+            "sample_date": {
+               "description": "Date on which a sample was collected",
+               "type": "string"
+            },
+            "sample_type": {
+               "description": "Type of sample",
+               "type": "string"
+            },
+            "subject": {
+               "type": "string"
+            }
+         },
+         "required": [
+            "id",
+            "subject"
+         ],
+         "title": "Sample",
+         "type": "object"
+      },
+      "Subject": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "age_of_father_at_birth": {
+               "description": "The age of the father when the subject was born",
+               "type": "integer"
+            },
+            "age_of_mother_at_birth": {
+               "description": "The age of the mother when the subject was born",
+               "type": "integer"
+            },
+            "birth_city": {
+               "description": "The city in which a person was born",
+               "type": "string"
+            },
+            "birth_country": {
+               "description": "The country in which a person was born",
+               "type": "string"
+            },
+            "birth_month": {
+               "description": "The month of a person's birth",
+               "type": "integer"
+            },
+            "birth_year": {
+               "description": "The year of a person's birth",
+               "type": "integer"
+            },
+            "dob": {
+               "description": "The date of a person's birth",
+               "type": "string"
+            },
+            "ethnicity": {
+               "description": "Person ethnicity",
+               "type": "string"
+            },
+            "first_name": {
+               "description": "The first name of a person",
+               "type": "string"
+            },
+            "handedness": {
+               "description": "Side of dominant hand of a person",
+               "type": "string"
+            },
+            "id": {
+               "type": "string"
+            },
+            "last_name": {
+               "description": "The last name of a person",
+               "type": "string"
+            },
+            "middle_name": {
+               "description": "The middle name of a person",
+               "type": "string"
+            },
+            "other_language": {
+               "description": "Any language a person speaks with fluency",
+               "type": "string"
+            },
+            "primary_language": {
+               "description": "A person's first language or the language spoken at home",
+               "type": "string"
+            },
+            "race": {
+               "description": "Person race",
+               "type": "string"
+            },
+            "residence": {
+               "description": "A person's living arrangements",
+               "type": "string"
+            },
+            "sex": {
+               "description": "Person gender",
+               "type": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "title": "Subject",
+         "type": "object"
+      },
+      "Visit": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "id": {
+               "type": "string"
+            },
+            "sample": {
+               "description": "Material collected from the subject",
+               "items": {
+                  "type": "string"
+               },
+               "type": "array"
+            },
+            "subject": {
+               "type": "string"
+            },
+            "visit_date": {
+               "description": "Date on which a visit occurred",
+               "type": "string"
+            }
+         },
+         "required": [
+            "id",
+            "subject"
+         ],
+         "title": "Visit",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "include_schema",
+   "type": "object"
+}
+

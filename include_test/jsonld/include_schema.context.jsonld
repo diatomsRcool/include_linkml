@@ -1,0 +1,106 @@
+{
+   "_comments": "Auto generated from include_schema.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-05-13 16:05\n    Schema: include_schema\n    \n    id: https://w3id.org/include_schema\n    description: INCLUDE Schema prototype\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "include_core": "https://w3id.org/mixs/include_core/",
+      "include_schema": "https://w3id.org/mixs/include_schema/",
+      "linkml": "https://w3id.org/linkml/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "@vocab": "https://w3id.org/mixs/include_schema/",
+      "age_of_father_at_birth": {
+         "@type": "xsd:integer"
+      },
+      "age_of_mother_at_birth": {
+         "@type": "xsd:integer"
+      },
+      "birth_month": {
+         "@type": "xsd:integer"
+      },
+      "birth_year": {
+         "@type": "xsd:integer"
+      },
+      "dob": {
+         "@type": "xsd:date"
+      },
+      "ethnicity": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "handedness": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "id": "@id",
+      "other_language": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "parent_sample": {
+         "@type": "@id"
+      },
+      "primary_language": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "race": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "residence": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "sample_date": {
+         "@type": "xsd:date"
+      },
+      "sample_type": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "sex": {
+         "@context": {
+            "@vocab": "@null",
+            "text": "skos:notation",
+            "description": "skos:prefLabel",
+            "meaning": "@id"
+         }
+      },
+      "subject": {
+         "@type": "@id"
+      },
+      "visit_date": {
+         "@type": "xsd:date"
+      },
+      "NamedThing": {
+         "@id": "include_core:NamedThing"
+      }
+   }
+}
+

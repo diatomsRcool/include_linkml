@@ -1,0 +1,10 @@
+{
+   "_comments": "Auto generated from include_core.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-05-14 09:03\n    Schema: include_core\n    \n    id: https://w3id.org/include_core\n    description: This is an example of an imported module\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "include_core": "https://w3id.org/mixs/include_core/",
+      "linkml": "https://w3id.org/linkml/",
+      "@vocab": "https://w3id.org/mixs/include_core/",
+      "id": "@id"
+   }
+}
+
